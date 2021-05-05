@@ -16,119 +16,79 @@ const Time = () => {
       <div>
         {/*  */}
         <QuoteContainer
-          //
-          id="1edu"
-          tag="Education"
-          quoteText="When one is writing a letter, he should think that the recipient
-					will make it into a hanging scroll"
+          id="Tm1"
+          tag="Time"
+          quoteText="If something is not brought to fruition over a period of twenty to
+                    thirty years, it will not be of great merit."
         />
+
         <QuoteContainer
-          //
-          id="2edu"
-          tag="Education"
-          quoteText="We learn about the sayings and deeds of the men of old in order to
-					entrust ourselves to their wisdom and prevent selfishness."
+          id="Tm2"
+          tag="Time"
+          quoteText="Life is a succession of moments. Be true to the thought of the
+                    moment [death] and avoid distraction."
         />
+
         <QuoteContainer
-          //
-          id="3edu"
-          tag="Education"
-          quoteText="A person who knows a little will act arrogant. When someone knows
-					something well, he is gentle."
+          id="Tm3"
+          tag="Time"
+          quoteText="Other than continuing to exert yourself, enter into nothing else,
+                    but go to the extent of living single thought by single thought."
         />
+
         <QuoteContainer
-          //
-          id="4edu"
-          tag="Education"
-          quoteText="Scholars are men who with wit and speech hide their own true
-					cowardice and greed."
+          title="Neglect #1"
+          id="Tm4"
+          tag="Time"
+          quoteText="Something that is not done at its time and at its place will
+                    remain unfinished for a lifetime. "
         />
+
         <QuoteContainer
-          //
-          id="5edu"
-          tag="Education"
-          title="Calculation #1"
-          quoteText="Calculating people are contemptible.
-					The reason for this is that calculation deals with loss and gain.
-					"
+          title="Neglect #2"
+          id="Tm5"
+          tag="Time"
+          quoteText="If one thinks about it later, he
+                    will be negligent all his life."
         />
+
         <QuoteContainer
-          //
-          id="6edu"
-          tag="Education"
-          title="Calculation #2"
-          quoteText="Death is considered loss and life is considered gain. 
-					Thus, death is something that such a person does not care for,and he is contemptible."
+          title="Present #1"
+          id="Tm6"
+          tag="Time"
+          quoteText="“right now” is ”at that time, ” and ”at that time” is ”right now”.
+                    "
         />
+
         <QuoteContainer
-          //
-          id="7edu"
-          tag=" Education"
-          quoteText="There are times when extensive knowledge becomes a hindrance.
-					Knowing the circumstances can be an obstruction in everyday
-					affairs."
+          title="Present #2"
+          id="Tm7"
+          tag="Time"
+          quoteText="One will miss the occasion if he thinks that these two are
+                    different."
         />
+
         <QuoteContainer
-          //
-          id="8edu"
-          tag=" Education"
-          title="Seven breaths #1"
-          quoteText="Discrimination will never be brought to a conclusion."
+          title="Present #3"
+          id="Tm8"
+          tag="Time"
+          quoteText="For example, if one were called before the master to explain
+                    something right away, he would most likely be perplexed."
         />
+
         <QuoteContainer
-          //
-          id="9edu"
-          tag=" Education"
-          title="Seven breaths #2"
-          quoteText="With an intense, fresh and undelaying spirit, one must make his judgments
-					within the space of seven breaths."
+          title="Present #4"
+          id="Tm9"
+          tag="Time"
+          quoteText="This is proof that he understands the two to be different."
         />
+
         <QuoteContainer
-          //
-          id="10edu"
-          tag=" Education"
-          title="Seven breaths #3"
-          quoteText="It is a matter of being determined and having the spirit to break
-					right through to the other side."
-        />
-        <QuoteContainer
-          //
-          id="11edu"
-          tag=" Education"
-          title="Wisdom #1"
-          quoteText="A man received an oral teaching concerning the Bravery. He neither
-					wrote it down nor committed it to memory but rather forgot it
-					completely."
-        />
-        <QuoteContainer
-          //
-          id="12edu"
-          tag=" Education"
-          title="Wisdom #2"
-          quoteText="Then, in facing real situations, he acted on impulse and the
-					things that he had learned became wisdom of his own."
-        />
-        <QuoteContainer
-          //
-          id="13edu"
-          tag=" Education"
-          quoteText="If one does not strike out by simply closing his eyes and rushing
-					into the enemy, even if it is only one step, he will be of no use."
-        />
-        <QuoteContainer
-          //
-          id="14edu"
-          tag=" Education"
-          quoteText="When the time comes, there is no moment for reasoning. And if you
-					have not done your inquiring beforehand , there is most often
-					shame."
-        />
-        <QuoteContainer
-          //
-          id="15edu"
-          tag=" Education"
-          quoteText="The resourcefulness of times of peace is the military preparation
-					for times of war."
+          title="Present #5"
+          id="Tm10"
+          tag="Time"
+          quoteText="When one attempts to concentrate things in this manner, won’t
+                    daily negligence and today’s lack of resolve be understood?"
         />
       </div>
     </CategoryScreen>

@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-export const MenuBox = styled.div`
-  display: flex;
-  justify-content: space-evenly;
+export const MenuItem = styled.a`
+  background-color: black;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
 `;
 
 export const WelcomeContainer = styled.div`
