@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import WelcomeScreen from "./components/WelcomeScreen";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hagakure</h1>
+      <WelcomeScreen />
     </div>
   );
 }
