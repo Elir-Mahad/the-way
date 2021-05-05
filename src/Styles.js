@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Welcome_container = styled.div`
+export const WelcomeContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 1rem;
@@ -41,4 +41,37 @@ export const JpLetter = styled.p`
   color: white;
   width: 3rem;
   padding: 1rem;
+`;
+
+// SynopsisScreen
+export const Synopsis = styled.div`
+  justify-content: center;
+  border: 1px solid black;
+  margin: 2rem;
+`;
+
+export const DescriptionTextOne = styled.p`
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid black;
+  margin: 1rem;
+`;
+export const DescriptionTextTwo = styled.p`
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: right;
+  border: 1px solid black;
+  margin: 1rem;
+`;
+
+export const UserGuide = styled.div`
+  //
+`;
+
+export const UserGuideInstruction = styled.p`
+  font-size: 1rem;
+  background-color: lightgrey;
+  padding: 1rem;
+  margin: 1rem;
 `;
