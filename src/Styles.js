@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const MenuBox = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`;
+
 export const WelcomeContainer = styled.div`
   align-items: center;
   justify-content: center;

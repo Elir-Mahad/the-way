@@ -1,60 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-//
+import { MenuBox } from "../Styles";
 
 function Menu() {
   return (
-    <div className="Menu">
+    <MenuBox className="Menu">
       <Link style={{ textDecoration: "none" }} to="/">
-        <div className="MenuOption">
-          <li className="OptionName">
-            <a> Home </a>
-          </li>
-        </div>
+        <p> Home </p>
+      </Link>
+      <Link style={{ textDecoration: "none" }} to="/conduct">
+        <p> Conduct </p>
+      </Link>
+      <Link style={{ textDecoration: "none" }} to="/courage">
+        <p> Courage </p>
+      </Link>
+      <Link style={{ textDecoration: "none" }} to="/death">
+        <p> Death </p>
       </Link>
       <Link style={{ textDecoration: "none" }} to="/education">
-        <div className="MenuOption">
-          <li className="OptionName">
-            <a> Education </a>
-          </li>
-        </div>
+        <p> Education </p>
       </Link>
-      {/* <Link style={{ textDecoration: "none" }} to="/pagetwo">
-        <div className="MenuOption">
-          <li className="OptionName">
-            <a> Page two </a>
-          </li>
-        </div>
+      <Link style={{ textDecoration: "none" }} to="/speech">
+        <p> Speech </p>
       </Link>
-      <Link style={{ textDecoration: "none" }} to="/pagethree">
-        <div className="MenuOption">
-          <li className="OptionName">
-            <a> Page three </a>
-          </li>
-        </div>
+      <Link style={{ textDecoration: "none" }} to="/time">
+        <p> Time </p>
       </Link>
-      <Link style={{ textDecoration: "none" }} to="/pagefour">
-        <div className="MenuOption">
-          <li className="OptionName">
-            <a> Page four </a>
-          </li>
-        </div>
-      </Link>
-      <Link style={{ textDecoration: "none" }} to="/pagefive">
-        <div className="MenuOption">
-          <li className="OptionName">
-            <a> Page five </a>
-          </li>
-        </div>
-      </Link>
-      <Link style={{ textDecoration: "none" }} to="/pagesix">
-        <div className="MenuOption">
-          <li className="OptionName">
-            <a> Page six </a>
-          </li>
-        </div>
-      </Link> */}
-    </div>
+    </MenuBox>
   );
 }
 
