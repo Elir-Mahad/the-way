@@ -1,11 +1,11 @@
 import React from "react";
-import QuoteContainer from "./QuoteContainer";
+import QuoteContainer from "../QuoteContainer";
 // import { useStateValue } from "../StateProvider";
-import { CategoryScreen } from "../Styles";
+import { CategoryScreen } from "../../Styles";
 
 //!------------------------------------------------------------IMPORTS
 
-const EduScreen = () => {
+const Education = () => {
   //
   //   const [{ basket }] = useStateValue();
   //
@@ -134,4 +134,4 @@ const EduScreen = () => {
     </CategoryScreen>
   );
 };
-export default EduScreen;
+export default Education;
