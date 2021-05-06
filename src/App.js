@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Menu from "./components/Menu";
 import WelcomeScreen from "./components/WelcomeScreen";
 //
 import Conduct from "./components/screens/Conduct";
@@ -10,42 +9,54 @@ import Death from "./components/screens/Death";
 import Education from "./components/screens/Education";
 import Speech from "./components/screens/Speech";
 import Time from "./components/screens/Time";
+import LikedQuotes from "./components/screens/LikedQuotes";
+//
+import { StateProvider } from "./StateProvider";
+import { initialState } from "./reducer";
+import reducer from "./reducer";
+import MenuAndBasket from "./components/MenuAndBasket";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/time">
-            <Menu />
-            <Time />
-          </Route>
-          <Route path="/speech">
-            <Menu />
-            <Speech />
-          </Route>
-          <Route path="/education">
-            <Menu />
-            <Education />
-          </Route>
-          <Route path="/death">
-            <Menu />
-            <Death />
-          </Route>
-          <Route path="/courage">
-            <Menu />
-            <Courage />
-          </Route>
-          <Route path="/conduct">
-            <Menu />
-            <Conduct />
-          </Route>
-          <Route path="/">
-            <Menu />
-            <WelcomeScreen />
-          </Route>
-        </Switch>
-      </Router>
+      <StateProvider initialState={initialState} reducer={reducer}>
+        <Router>
+          <Switch>
+            <Route path="/favourite">
+              <MenuAndBasket />
+              <LikedQuotes />
+            </Route>
+            <Route path="/time">
+              <MenuAndBasket />
+              <Time />
+            </Route>
+            <Route path="/speech">
+              <MenuAndBasket />
+              <Speech />
+            </Route>
+            <Route path="/education">
+              <MenuAndBasket />
+              <Education />
+            </Route>
+            <Route path="/death">
+              <MenuAndBasket />
+              <Death />
+            </Route>
+            <Route path="/courage">
+              <MenuAndBasket />
+              <Courage />
+            </Route>
+            <Route path="/conduct">
+              <MenuAndBasket />
+              <Conduct />
+            </Route>
+            <Route path="/">
+              <MenuAndBasket />
+              <WelcomeScreen />
+            </Route>
+          </Switch>
+        </Router>
+      </StateProvider>
     </div>
   );
 }

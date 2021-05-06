@@ -18,13 +18,11 @@ import { FaQuoteRight } from "react-icons/fa";
 //
 import SubjectIcon from "@material-ui/icons/Subject";
 import FormatListNumberedRtlIcon from "@material-ui/icons/FormatListNumberedRtl";
-import FavoriteIcon from "@material-ui/icons/Favorite";
+import DeleteIcon from "@material-ui/icons/Delete";
 //
 import { useStateValue } from "../StateProvider";
 
-function QuoteContainer({ id, tag, title, quoteText }) {
-  // split apart the object, and grab the id, title, and quote text
-
+function LikedQuotesContainer({ id, tag, title, quoteText }) {
   //
   const [{}, dispatch] = useStateValue();
   // THIS IS THE DATA LAYER FROM STATE PROVIDER
@@ -32,17 +30,13 @@ function QuoteContainer({ id, tag, title, quoteText }) {
   // WHEN WILL NEED TO THE GRAB THE BASKET ITEMS
   // OR THE WHOLE BASKET SOMEWHERE IN THE COMPONENT
 
-  const addToBasket = () => {
-    // console.log();
-    // add item to basket
+  const removeFromBasket = () => {
+    // remove item from basket
     dispatch({
-      type: "ADD_TO_BASKET", // this is the action.type from the reducer.js
-      item: {
-        id: id, // fetch the id of the item that's being added
-        tag: tag,
-        title: title,
-        quoteText: quoteText,
-      },
+      type: "REMOVE_FROM_BASKET",
+      // this is the action.type from the reducer.js
+      id: id,
+      // fetch the id of the item that's being removed
     });
   };
 
@@ -72,8 +66,8 @@ function QuoteContainer({ id, tag, title, quoteText }) {
         </TextAndQuotes>
         {/* Liked icon below */}
         <CategoryIcons>
-          <button onClick={addToBasket} style={{ padding: 5 }}>
-            <FavoriteIcon />
+          <button onClick={removeFromBasket} style={{ padding: 5 }}>
+            <DeleteIcon />
           </button>
         </CategoryIcons>
         {/*  */}
@@ -82,6 +76,4 @@ function QuoteContainer({ id, tag, title, quoteText }) {
   );
 }
 
-// f4f4f2
-
-export default QuoteContainer;
+export default LikedQuotesContainer;

@@ -1,9 +1,18 @@
 import styled from "styled-components";
 import blackbackground from "./assets/black.png";
 
-export const MenuBox = styled.div`
+// TopBar
+export const TopBar = styled.div`
+  display: flex;
+  justify-content: space-between;
   position: sticky;
   top: 0;
+`;
+
+//Menu
+
+export const MenuBox = styled.div`
+  //
 `;
 
 export const MenuItems = styled.div`
@@ -30,6 +39,51 @@ export const MenuIconContainer = styled.button`
   // background-color: white;
   border: none;
 `;
+
+// BasketHeart
+
+export const BasketAndCountBox = styled.div`
+  //
+`;
+
+export const BasketAndCount = styled.div`
+  display: flex;
+  background-color: grey;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 0.2rem;
+`;
+export const ItemCount = styled.p`
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
+  width: 2rem;
+  text-align: center;
+`;
+
+//LikeQuotes
+
+export const NoLikedQuotesContainer = styled.p`
+  background-color: black;
+  padding: 10;
+`;
+export const NoLikedQuotesText = styled.p`
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 5;
+`;
+export const LikedQuotesTitle = styled.p`
+  text-align: center;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-width: 1rem;
+  border-top-width: 1rem;
+  background-color: white;
+`;
+
+// Landing + synopsis + userguide
 
 export const WelcomeContainer = styled.div`
   align-items: center;
@@ -74,7 +128,6 @@ export const JpLetter = styled.p`
   padding: 1rem;
 `;
 
-// SynopsisScreen
 export const Synopsis = styled.div`
   justify-content: center;
   border: 1px solid black;
@@ -107,7 +160,7 @@ export const UserGuideInstruction = styled.p`
   margin: 1rem;
 `;
 
-// Other Quotes Container styles
+// Quotes Container styles
 
 export const CategoryScreen = styled.div`
   margin-left: 1.5rem;
