@@ -1,15 +1,34 @@
 import styled from "styled-components";
+import blackbackground from "./assets/black.png";
 
-export const MenuIconContainer = styled.div`
-  padding-left: 1rem;
-  padding-top: 1rem;
+export const MenuBox = styled.div`
+  position: sticky;
+  top: 0;
+`;
+
+export const MenuItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  height: 20rem;
+  width: 15rem;
+  position: absolute;
 `;
 
 export const MenuItem = styled.a`
-  background-color: black;
-  padding: 1rem;
   text-decoration: none;
   color: white;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+`;
+
+export const MenuIconContainer = styled.button`
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  // background-color: white;
+  border: none;
 `;
 
 export const WelcomeContainer = styled.div`
@@ -91,7 +110,13 @@ export const UserGuideInstruction = styled.p`
 // Other Quotes Container styles
 
 export const CategoryScreen = styled.div`
-  //
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+`;
+
+export const BackgroundImageContainer = styled.div`
+  background-image: url(${blackbackground});
+  background-size: cover;
 `;
 
 export const QuoteBox = styled.div`
@@ -100,24 +125,27 @@ export const QuoteBox = styled.div`
 `;
 
 export const TopTextIcon = styled.div`
-  background-color: grey;
+  background-color: white;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
 `;
 
 export const TextIcon = styled.div`
-  //
+  display: flex;
+  flexdirection: row;
+  alignitems: center;
 `;
 
 export const Tag = styled.h3`
   font-size: 1.2rem;
+  font-weight: 100;
 `;
 
 export const Quotetitle = styled.h2`
   font-size: 1.2rem;
+  font-weight: 100;
 `;
 
 export const QuotesLeft = styled.div`
@@ -143,10 +171,10 @@ export const TheQuote = styled.p`
   text-align: left;
 `;
 
-// export const CategoryIcons = styled.img`
-//   background-color: white;
-//   width: 100%;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-evenly;
-// `;
+export const CategoryIcons = styled.div`
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;

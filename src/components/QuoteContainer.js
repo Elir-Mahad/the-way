@@ -11,14 +11,14 @@ import {
   TextIcon,
   TheQuote,
   TopTextIcon,
+  BackgroundImageContainer,
 } from "../Styles";
-import { IconContext } from "react-icons";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 //
-//
-// import { MaterialIcons } from "@expo/vector-icons";
-// import { AntDesign } from "@expo/vector-icons";
+import SubjectIcon from "@material-ui/icons/Subject";
+import FormatListNumberedRtlIcon from "@material-ui/icons/FormatListNumberedRtl";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 //
 // import { useStateValue } from "./StateProvider";
 
@@ -48,53 +48,40 @@ function QuoteContainer({ id, tag, title, quoteText }) {
 
   return (
     <QuoteBox>
-      <TopTextIcon>
-        {/* Tag and icon */}
-        <TextIcon>
-          {/* <MaterialIcons name="subject" size={24} color="black" /> */}
-          <Tag>{tag}</Tag>
-        </TextIcon>
-        {/* Quote title and icon */}
-        <TextIcon>
-          <Quotetitle> {title}</Quotetitle>
-          {/* <MaterialIcons
-							name="format-list-numbered-rtl"
-							size={24}
-							color="black"
-						/> */}
-        </TextIcon>
-      </TopTextIcon>
-      {/* The actual quote is below */}
-      <TextAndQuotes>
+      <BackgroundImageContainer>
+        {/* Top texts and icons below */}
+        <TopTextIcon>
+          <TextIcon>
+            <SubjectIcon />
+            <Tag>{tag}</Tag>
+          </TextIcon>
+          <TextIcon>
+            <Quotetitle> {title}</Quotetitle>
+            <FormatListNumberedRtlIcon />
+          </TextIcon>
+        </TopTextIcon>
+        {/* The actual quote is below */}
+        <TextAndQuotes>
+          <QuotesLeft>
+            <FaQuoteLeft />
+          </QuotesLeft>
+          <TheQuote>{quoteText}</TheQuote>
+          <QuotesRight>
+            <FaQuoteRight />
+          </QuotesRight>
+        </TextAndQuotes>
+        {/* Liked icon below */}
+        <CategoryIcons>
+          <div
+            //
+            // onPress={addToBasket}
+            style={{ padding: 5 }}
+          >
+            <FavoriteIcon />
+          </div>
+        </CategoryIcons>
         {/*  */}
-        <QuotesLeft>
-          <FaQuoteLeft />
-        </QuotesLeft>
-        {/*  */}
-        <TheQuote>{quoteText}</TheQuote>
-        {/*  */}
-        <QuotesRight>
-          <FaQuoteRight />
-        </QuotesRight>
-        {/*  */}
-      </TextAndQuotes>
-      {/*  */}
-
-      {/* <CategoryIcons>
-				<TouchableHighlight
-					//
-					onPress={addToBasket}
-					underlayColor="grey"
-					style={{ padding: 5 }}
-				>
-					<AntDesign
-						//
-						name="heart"
-						size={22}
-						color="black"
-					/>
-				</TouchableHighlight>
-			</CategoryIcons> */}
+      </BackgroundImageContainer>
     </QuoteBox>
   );
 }
