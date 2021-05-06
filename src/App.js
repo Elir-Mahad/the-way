@@ -12,14 +12,15 @@ import Time from "./components/screens/Time";
 //
 import SideBar from "./sidebar";
 import MenuIcon from "@material-ui/icons/Menu";
+import { MenuIconContainer } from "./Styles";
 
 function App() {
   return (
     <div className="App">
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
-      <div id="page-wrap">
+      <MenuIconContainer id="page-wrap">
         <MenuIcon />
-      </div>
+      </MenuIconContainer>
       <Router>
         <Switch>
           <Route path="/time">

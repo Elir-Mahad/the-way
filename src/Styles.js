@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const MenuIconContainer = styled.div`
+  padding-left: 1rem;
+  padding-top: 1rem;
+`;
+
 export const MenuItem = styled.a`
   background-color: black;
   padding: 1rem;
