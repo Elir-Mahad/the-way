@@ -17,7 +17,6 @@ function App() {
   return (
     <div className="App">
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
-      {/*  */}
       <div id="page-wrap">
         <MenuIcon />
       </div>

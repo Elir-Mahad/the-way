@@ -83,18 +83,13 @@ export const UserGuideInstruction = styled.p`
   margin: 1rem;
 `;
 
-//
-
 // Other Quotes Container styles
-//
+
 export const CategoryScreen = styled.div`
   //
 `;
 
 export const QuoteBox = styled.div`
-  //   flex: 1
-  //   align-items: center;
-  //   justify-content: center;
   background-color: black;
   margin: 15px;
 `;
@@ -109,9 +104,7 @@ export const TopTextIcon = styled.div`
 `;
 
 export const TextIcon = styled.div`
-  //   display: flex;
-  //   flex-direction: row;
-  //   align-items: center;
+  //
 `;
 
 export const Tag = styled.h3`
@@ -120,28 +113,29 @@ export const Tag = styled.h3`
 
 export const Quotetitle = styled.h2`
   font-size: 1.2rem;
-  //   margin-right: 5;
 `;
 
-export const QuotesLeft = styled.img`
-  align-self: flex-start;
-  margin-bottom: 10px;
+export const QuotesLeft = styled.div`
+  color: white;
+  font-size: 2.5rem;
 `;
 
-// export const QuotesRight = styled.img`
-//   align-self: flex-end;
-//   margin-top: 10px;
-// `;
+export const QuotesRight = styled.div`
+  color: white;
+  font-size: 2.5rem;
+  :right ;
+`;
 
 export const TextAndQuotes = styled.div`
   padding: 4rem;
+  display: flex;
 `;
 
 export const TheQuote = styled.p`
   color: white;
   font-size: 1.5rem;
-  //   padding: 5;
-  //   text-align: left;
+  margin: 2rem;
+  text-align: left;
 `;
 
 // export const CategoryIcons = styled.img`

@@ -3,7 +3,6 @@ import { slide as Menu } from "react-burger-menu";
 import "./App.css";
 import { MenuItem } from "./Styles";
 import "./App.css";
-import { MenuBox } from "./Styles";
 
 export default (props) => {
   return (

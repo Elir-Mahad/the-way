@@ -1,7 +1,10 @@
 import React from "react";
+import "../App.css";
 import {
   CategoryIcons,
   QuoteBox,
+  QuotesRight,
+  QuotesLeft,
   Quotetitle,
   Tag,
   TextAndQuotes,
@@ -9,6 +12,9 @@ import {
   TheQuote,
   TopTextIcon,
 } from "../Styles";
+import { IconContext } from "react-icons";
+import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteRight } from "react-icons/fa";
 //
 //
 // import { MaterialIcons } from "@expo/vector-icons";
@@ -60,9 +66,17 @@ function QuoteContainer({ id, tag, title, quoteText }) {
       </TopTextIcon>
       {/* The actual quote is below */}
       <TextAndQuotes>
-        {/* <LeftQuote /> */}
+        {/*  */}
+        <QuotesLeft>
+          <FaQuoteLeft />
+        </QuotesLeft>
+        {/*  */}
         <TheQuote>{quoteText}</TheQuote>
-        {/* <RightQuote /> */}
+        {/*  */}
+        <QuotesRight>
+          <FaQuoteRight />
+        </QuotesRight>
+        {/*  */}
       </TextAndQuotes>
       {/*  */}
 
