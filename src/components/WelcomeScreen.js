@@ -1,13 +1,12 @@
 //
 import React from "react";
 import {
-  EngLetter,
-  Japandengtitles,
+  Japanesetitle,
   JpLetter,
-  LettersEng,
   LettersJp,
   WelcomeContainer,
   LandingBackground,
+  IntroText,
 } from "../Styles";
 //
 
@@ -18,32 +17,28 @@ const WelcomeScreen = () => {
   return (
     <LandingBackground>
       <WelcomeContainer>
-        <Japandengtitles>
-          {/*  */}
-          {/*  */}
-          <LettersEng>
-            <EngLetter> H </EngLetter>
-            <EngLetter> A </EngLetter>
-            <EngLetter> G </EngLetter>
-            <EngLetter> A </EngLetter>
-            <EngLetter> K </EngLetter>
-            <EngLetter> U </EngLetter>
-            <EngLetter> R </EngLetter>
-            <EngLetter> E </EngLetter>
-          </LettersEng>
+        <Japanesetitle>
+          <LettersJp>
+            <JpLetter> 戦 </JpLetter>
+            <JpLetter> 士 </JpLetter>
+            <JpLetter> -- </JpLetter>
+            <JpLetter> ク </JpLetter>
+            <JpLetter> ラ </JpLetter>
+            <JpLetter> ス </JpLetter>
+          </LettersJp>
           <LettersJp>
             <JpLetter> 葉 </JpLetter>
             <JpLetter> 隠 </JpLetter>
-            <JpLetter>---</JpLetter>
+            <JpLetter> -- </JpLetter>
             <JpLetter> 戦 </JpLetter>
             <JpLetter> 士 </JpLetter>
             <JpLetter> ク </JpLetter>
             <JpLetter> ラ </JpLetter>
             <JpLetter> ス </JpLetter>
-            {/* 葉隠 - 山本 常朝  */}
           </LettersJp>
-        </Japandengtitles>
+        </Japanesetitle>
       </WelcomeContainer>
+      <IntroText>Words from Yamamoto Tsunetomo</IntroText>
     </LandingBackground>
   );
 };

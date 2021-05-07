@@ -29,7 +29,8 @@ export const MenuItems = styled.div`
   height: 27rem;
   width: 12rem;
   position: absolute;
-  top: 62px;
+  top: 66px;
+  left: 1px;
 `;
 
 export const ItemAndIcon = styled.div`
@@ -40,23 +41,24 @@ export const ItemAndIcon = styled.div`
 `;
 
 export const MenuItemIcon = styled.img`
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: white;
 `;
 
 export const MenuItem = styled.a`
   text-decoration: none;
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 `;
 
 export const MenuIconContainer = styled.button`
   display: flex;
-  background-color: white;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
   justify-content: center;
-  border-radius: 3px;
-  border: none;
+  border-radius: 50%;
   padding: 0.7rem;
 `;
 
@@ -68,16 +70,24 @@ export const BasketAndCountBox = styled.div`
 
 export const BasketAndCount = styled.div`
   display: flex;
-  background-color: white;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
   justify-content: center;
-  border-radius: 3px;
-  padding: 0.7rem;
+  border-radius: 50%;
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 `;
 
 export const ItemCount = styled.p`
   font-size: 1.2rem;
-  color: black;
+  // color: black;
   text-align: center;
+  position: relative;
+  top: 12px;
+  right: 3px;
 `;
 
 // ------------------------------------- Page specific styles
@@ -86,60 +96,54 @@ export const ItemCount = styled.p`
 
 export const LandingBackground = styled.div`
   background-image: url(${samuraiguard});
-  height: 100vh;
+  height: 88vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 `;
 // Important:The code in the background image
 // makes the image take up the full height of the screen.
+// The height needs to be adjusted, based on the screen,
+//  so that there is no scroll on the screen.
+// For the the landing, i didn't want for there to be any scrolling,
+// so i set the height to 91.5vh;
 
 export const WelcomeContainer = styled.div`
   //
 `;
 
-export const Japandengtitles = styled.div`
-  padding-left: 1rem;
-  padding-right: 1rem;
+export const Japanesetitle = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
-`;
-
-export const LettersEng = styled.div`
-  background-color: black;
-  border-radius: 2rem;
-  // height: 100%;
 `;
 
 export const LettersJp = styled.div`
   background-color: black;
-  border-radius: 2rem;
-  // height: 100%;
-`;
-
-export const EngLetter = styled.p`
-  font-size: 1.5rem;
-  text-align: center;
-  color: white;
-  width: 3rem;
-  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 `;
 
 export const JpLetter = styled.p`
   font-size: 1.5rem;
   text-align: center;
   color: white;
-  width: 3rem;
+  width: 2.5rem;
   padding: 0.5rem;
 `;
 
 export const IntroText = styled.p`
   font-size: 1.3rem;
+  text-align: center;
+  width: 100%;
   color: white;
   background-color: black;
-  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  bottom: 0;
 `;
 
 // Synopsis
