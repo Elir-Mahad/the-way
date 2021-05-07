@@ -1,7 +1,7 @@
 import styled from "styled-components";
 // Background images
 import samuraiguard from "./assets/samurai_infront_of_temple.jpg";
-import samuraiontemple from "./assets/samurai_on_top_of_temple.jpg";
+import darkbackground from "./assets/dark_texture_background.jpg";
 import blackbackground from "./assets/black.png";
 
 //-------------------------------------- General styles
@@ -149,36 +149,31 @@ export const IntroText = styled.p`
 // Synopsis
 
 export const SynopsisBackground = styled.div`
-  background-image: url(${samuraiontemple});
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #130f40;
+  background-image: linear-gradient(-100deg, #130f40 0%, #000000 64%);
 `;
-// Important:The code in the background image
-// makes the image take up the full height of the screen.
+
+export const Picture = styled.img`
+  width: 100%;
+  filter: grayscale(100%);
+`;
 
 export const SynopsisContainer = styled.div`
   justify-content: center;
-  padding: 2rem;
-  height: 40rem;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
 `;
 
-export const DescriptionTextOne = styled.p`
-  font-size: 1.1rem;
+export const DescriptionText = styled.p`
   text-align: left;
-  margin: 1rem;
-`;
-export const DescriptionTextTwo = styled.p`
-  font-size: 1.1rem;
-  text-align: right;
   margin: 1rem;
 `;
 
 // User guide
 
 export const UserGuideBackground = styled.div`
-  background-image: url(${samuraiontemple});
+  background-image: url(${darkbackground});
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
