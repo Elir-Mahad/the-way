@@ -1,11 +1,19 @@
 import styled from "styled-components";
+// Background images
+import samuraiguard from "./assets/samurai_infront_of_temple.jpg";
+import samuraiontemple from "./assets/samurai_on_top_of_temple.jpg";
 import blackbackground from "./assets/black.png";
 
+//-------------------------------------- General styles
+
 // TopBar
+
 export const TopBar = styled.div`
   display: flex;
   justify-content: space-between;
   position: sticky;
+  background-color: black;
+  padding: 0.5rem;
   top: 0;
 `;
 
@@ -34,10 +42,11 @@ export const MenuItem = styled.a`
 
 export const MenuIconContainer = styled.button`
   display: flex;
+  background-color: white;
   justify-content: center;
-  margin-top: 1rem;
-  // background-color: white;
+  border-radius: 3px;
   border: none;
+  padding: 0.7rem;
 `;
 
 // BasketHeart
@@ -48,20 +57,132 @@ export const BasketAndCountBox = styled.div`
 
 export const BasketAndCount = styled.div`
   display: flex;
-  background-color: grey;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  padding: 0.2rem;
+  background-color: white;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 0.7rem;
 `;
+
 export const ItemCount = styled.p`
-  font-size: 1.1rem;
-  background-color: black;
-  color: white;
-  width: 2rem;
+  font-size: 1.2rem;
+  color: black;
   text-align: center;
 `;
 
-//LikeQuotes
+// ------------------------------------- Page specific styles
+
+// Landing
+
+export const LandingBackground = styled.div`
+  background-image: url(${samuraiguard});
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+// Important:The code in the background image
+// makes the image take up the full height of the screen.
+
+export const WelcomeContainer = styled.div`
+  //
+`;
+
+export const Japandengtitles = styled.div`
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+`;
+
+export const LettersEng = styled.div`
+  background-color: black;
+  border-radius: 2rem;
+  // height: 100%;
+`;
+
+export const LettersJp = styled.div`
+  background-color: black;
+  border-radius: 2rem;
+  // height: 100%;
+`;
+
+export const EngLetter = styled.p`
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  width: 3rem;
+  padding: 0.5rem;
+`;
+
+export const JpLetter = styled.p`
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  width: 3rem;
+  padding: 0.5rem;
+`;
+
+export const IntroText = styled.p`
+  font-size: 1.3rem;
+  color: white;
+  background-color: black;
+  padding: 1rem;
+`;
+
+// Synopsis
+
+export const SynopsisBackground = styled.div`
+  background-image: url(${samuraiontemple});
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+// Important:The code in the background image
+// makes the image take up the full height of the screen.
+
+export const SynopsisContainer = styled.div`
+  justify-content: center;
+  padding: 2rem;
+  height: 40rem;
+`;
+
+export const DescriptionTextOne = styled.p`
+  font-size: 1.1rem;
+  text-align: left;
+  margin: 1rem;
+`;
+export const DescriptionTextTwo = styled.p`
+  font-size: 1.1rem;
+  text-align: right;
+  margin: 1rem;
+`;
+
+// User guide
+
+export const UserGuideBackground = styled.div`
+  background-image: url(${samuraiontemple});
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+// Important:The code in the background image
+// makes the image take up the full height of the screen.
+
+export const UserGuideContainer = styled.div`
+  padding: 2rem;
+  height: 40rem;
+`;
+
+export const UserGuideInstruction = styled.p`
+  font-size: 1.1rem;
+  margin: 0.5rem;
+`;
+
+//Liked Quotes
 
 export const NoLikedQuotesContainer = styled.p`
   background-color: black;
@@ -83,98 +204,22 @@ export const LikedQuotesTitle = styled.p`
   background-color: white;
 `;
 
-// Landing + synopsis + userguide
-
-export const WelcomeContainer = styled.div`
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
-`;
-
-export const Japandengtitles = styled.div`
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
-export const LettersEng = styled.div`
-  background-color: black;
-  border-width: 3rem;
-  border-color: #222831;
-  border-radius: 2rem;
-`;
-
-export const LettersJp = styled.div`
-  background-color: black;
-  border-width: 3rem;
-  border-color: #222831;
-  border-radius: 2rem;
-`;
-
-export const EngLetter = styled.p`
-  font-size: 2rem;
-  text-align: center;
-  color: white;
-  width: 3rem;
-  padding: 1rem;
-`;
-
-export const JpLetter = styled.p`
-  font-size: 2rem;
-  text-align: center;
-  color: white;
-  width: 3rem;
-  padding: 1rem;
-`;
-
-export const Synopsis = styled.div`
-  justify-content: center;
-  border: 1px solid black;
-  margin: 2rem;
-`;
-
-export const DescriptionTextOne = styled.p`
-  font-size: 1rem;
-  padding: 1rem;
-  text-align: left;
-  border: 1px solid black;
-  margin: 1rem;
-`;
-export const DescriptionTextTwo = styled.p`
-  font-size: 1rem;
-  padding: 1rem;
-  text-align: right;
-  border: 1px solid black;
-  margin: 1rem;
-`;
-
-export const UserGuide = styled.div`
-  //
-`;
-
-export const UserGuideInstruction = styled.p`
-  font-size: 1rem;
-  background-color: lightgrey;
-  padding: 1rem;
-  margin: 1rem;
-`;
-
-// Quotes Container styles
-
-export const CategoryScreen = styled.div`
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-`;
+// Quotes styles
 
 export const BackgroundImageContainer = styled.div`
   background-image: url(${blackbackground});
   background-size: cover;
 `;
 
+export const CategoryScreen = styled.div`
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+`;
+
 export const QuoteBox = styled.div`
   background-color: black;
-  margin: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 `;
 
 export const TopTextIcon = styled.div`
@@ -183,6 +228,7 @@ export const TopTextIcon = styled.div`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0.5rem;
 `;
 
 export const TextIcon = styled.div`
@@ -192,35 +238,37 @@ export const TextIcon = styled.div`
 `;
 
 export const Tag = styled.h3`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 100;
 `;
 
 export const Quotetitle = styled.h2`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 100;
 `;
 
 export const QuotesLeft = styled.div`
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
 `;
 
 export const QuotesRight = styled.div`
   color: white;
-  font-size: 2.5rem;
-  :right ;
+  font-size: 2rem;
+  display: flex;
+  align-self: flex-end;
 `;
 
 export const TextAndQuotes = styled.div`
-  padding: 4rem;
+  padding: 0.5rem;
   display: flex;
 `;
 
 export const TheQuote = styled.p`
   color: white;
-  font-size: 1.5rem;
-  margin: 2rem;
+  font-size: 1.2rem;
+  margin: 1rem;
+  // background-color: red;
   text-align: left;
 `;
 
@@ -230,4 +278,9 @@ export const CategoryIcons = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+`;
+
+export const IconButton = styled.button`
+  background-color: white;
+  border: none;
 `;

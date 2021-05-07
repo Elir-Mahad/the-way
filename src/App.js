@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WelcomeScreen from "./components/WelcomeScreen";
+import Synopsis from "./components/Synopsis";
+import UserGuide from "./components/UserGuide";
 //
 import Conduct from "./components/screens/Conduct";
 import Courage from "./components/screens/Courage";
@@ -49,6 +51,15 @@ function App() {
             <Route path="/conduct">
               <MenuAndBasket />
               <Conduct />
+            </Route>
+            {/*  */}
+            <Route path="/userguide">
+              <MenuAndBasket />
+              <UserGuide />
+            </Route>
+            <Route path="/synopsis">
+              <MenuAndBasket />
+              <Synopsis />
             </Route>
             <Route path="/">
               <MenuAndBasket />

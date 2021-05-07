@@ -12,6 +12,7 @@ import {
   TheQuote,
   TopTextIcon,
   BackgroundImageContainer,
+  IconButton,
 } from "../Styles";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
@@ -72,9 +73,9 @@ function QuoteContainer({ id, tag, title, quoteText }) {
         </TextAndQuotes>
         {/* Liked icon below */}
         <CategoryIcons>
-          <button onClick={addToBasket} style={{ padding: 5 }}>
+          <IconButton onClick={addToBasket} style={{ padding: 5 }}>
             <FavoriteIcon />
-          </button>
+          </IconButton>
         </CategoryIcons>
         {/*  */}
       </BackgroundImageContainer>

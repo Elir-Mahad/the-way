@@ -16,6 +16,12 @@ function Menu() {
           <Link style={{ textDecoration: "none" }} to="/">
             <MenuItem> Home </MenuItem>
           </Link>
+          <Link style={{ textDecoration: "none" }} to="/synopsis">
+            <MenuItem> Synopsis </MenuItem>
+          </Link>
+          <Link style={{ textDecoration: "none" }} to="/userguide">
+            <MenuItem> User guide </MenuItem>
+          </Link>
           <Link style={{ textDecoration: "none" }} to="/conduct">
             <MenuItem> Conduct </MenuItem>
           </Link>

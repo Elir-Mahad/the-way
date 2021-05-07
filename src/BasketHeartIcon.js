@@ -15,7 +15,7 @@ const BasketHeartIcon = () => {
   console.log(basket);
   //
   return (
-    <BasketAndCountBox>
+    <BasketAndCountBox className="basket">
       <Link style={{ textDecoration: "none" }} to="/favourite">
         <BasketAndCount>
           <FavoriteIcon />
