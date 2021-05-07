@@ -73,7 +73,7 @@ function QuoteContainer({ id, tag, title, quoteText }) {
         </TextAndQuotes>
         {/* Liked icon below */}
         <CategoryIcons>
-          <IconButton onClick={addToBasket} style={{ padding: 5 }}>
+          <IconButton onClick={addToBasket}>
             <FavoriteIcon />
           </IconButton>
         </CategoryIcons>

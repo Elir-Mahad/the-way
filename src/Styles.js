@@ -290,8 +290,8 @@ export const TheQuote = styled.p`
 export const CategoryIcons = styled.div`
   background-color: white;
   width: 100%;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
