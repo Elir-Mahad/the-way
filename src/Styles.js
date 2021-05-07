@@ -19,9 +19,7 @@ export const TopBar = styled.div`
 
 //Menu
 
-export const MenuBox = styled.div`
-  //
-`;
+export const MenuBox = styled.div``;
 
 export const MenuItems = styled.div`
   display: flex;
