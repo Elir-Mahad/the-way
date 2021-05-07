@@ -215,20 +215,22 @@ export const LikedQuotesTitle = styled.p`
 
 // Quotes styles
 
-export const BackgroundImageContainer = styled.div`
-  background-image: url(${blackbackground});
-  background-size: cover;
-`;
-
 export const CategoryScreen = styled.div`
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 `;
+// This styled component is used in all the category specific screen
 
 export const QuoteBox = styled.div`
   background-color: black;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+`;
+
+export const BackgroundImageContainer = styled.div`
+  background-image: url(${blackbackground});
+  background-size: cover;
 `;
 
 export const TopTextIcon = styled.div`
@@ -237,7 +239,7 @@ export const TopTextIcon = styled.div`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0.8rem;
 `;
 
 export const TextIcon = styled.div`
@@ -256,6 +258,14 @@ export const Quotetitle = styled.h2`
   font-weight: 100;
 `;
 
+export const TextAndQuotes = styled.div`
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: flex;
+`;
+
 export const QuotesLeft = styled.div`
   color: white;
   font-size: 2rem;
@@ -268,22 +278,20 @@ export const QuotesRight = styled.div`
   align-self: flex-end;
 `;
 
-export const TextAndQuotes = styled.div`
-  padding: 0.5rem;
-  display: flex;
-`;
-
 export const TheQuote = styled.p`
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 1rem;
-  // background-color: red;
+  line-height: 2.5rem;
   text-align: left;
+  // background-color: red;
 `;
 
 export const CategoryIcons = styled.div`
   background-color: white;
   width: 100%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
