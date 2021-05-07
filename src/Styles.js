@@ -155,7 +155,6 @@ export const SynopsisBackground = styled.div`
 
 export const Picture = styled.img`
   width: 100%;
-  filter: grayscale(100%);
 `;
 
 export const SynopsisContainer = styled.div`
