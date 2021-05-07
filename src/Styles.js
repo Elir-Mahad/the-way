@@ -27,17 +27,30 @@ export const MenuItems = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: black;
-  height: 20rem;
-  width: 15rem;
+  background-color: white;
+  height: 27rem;
+  width: 12rem;
   position: absolute;
+  top: 62px;
+`;
+
+export const ItemAndIcon = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: center;
+`;
+
+export const MenuItemIcon = styled.img`
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
 `;
 
 export const MenuItem = styled.a`
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.3rem;
-  margin-left: 1rem;
 `;
 
 export const MenuIconContainer = styled.button`

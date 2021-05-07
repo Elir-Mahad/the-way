@@ -1,8 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useToggle } from "./usetoogle";
-import { MenuBox, MenuIconContainer, MenuItems, MenuItem } from "../Styles";
+import {
+  MenuBox,
+  MenuIconContainer,
+  MenuItems,
+  ItemAndIcon,
+  MenuItem,
+  MenuItemIcon,
+} from "../Styles";
 import MenuIcon from "@material-ui/icons/Menu";
+//
+import logo from "../assets/logo.jpeg";
+import description from "../assets/description.png";
+import guide from "../assets/info.png";
+import conduct from "../assets/character.png";
+import courage from "../assets/courage.png";
+import death from "../assets/death.png";
+import education from "../assets/education.png";
+import speech from "../assets/speech.png";
+import time from "../assets/time.png";
+
 //
 function Menu() {
   const [isToggled, toggle] = useToggle(false);
@@ -14,31 +32,66 @@ function Menu() {
       {isToggled && (
         <MenuItems>
           <Link style={{ textDecoration: "none" }} to="/">
-            <MenuItem> Home </MenuItem>
+            <ItemAndIcon>
+              <MenuItem> Home </MenuItem>
+              <MenuItemIcon src={logo} />
+            </ItemAndIcon>
           </Link>
+          {/*  */}
           <Link style={{ textDecoration: "none" }} to="/synopsis">
-            <MenuItem> Synopsis </MenuItem>
+            <ItemAndIcon>
+              <MenuItem> Synopsis </MenuItem>
+              <MenuItemIcon src={description} />
+            </ItemAndIcon>
           </Link>
+          {/*  */}
           <Link style={{ textDecoration: "none" }} to="/userguide">
-            <MenuItem> User guide </MenuItem>
+            <ItemAndIcon>
+              <MenuItem> User guide </MenuItem>
+              <MenuItemIcon src={guide} />
+            </ItemAndIcon>
           </Link>
+          {/*  */}
           <Link style={{ textDecoration: "none" }} to="/conduct">
-            <MenuItem> Conduct </MenuItem>
+            <ItemAndIcon>
+              <MenuItem> Conduct </MenuItem>
+              <MenuItemIcon src={conduct} />
+            </ItemAndIcon>
           </Link>
+          {/*  */}
           <Link style={{ textDecoration: "none" }} to="/courage">
-            <MenuItem> Courage </MenuItem>
+            <ItemAndIcon>
+              <MenuItem> Courage </MenuItem>
+              <MenuItemIcon src={courage} />
+            </ItemAndIcon>
           </Link>
+          {/*  */}
           <Link style={{ textDecoration: "none" }} to="/death">
-            <MenuItem> Death </MenuItem>
+            <ItemAndIcon>
+              <MenuItem> Death </MenuItem>
+              <MenuItemIcon src={death} />
+            </ItemAndIcon>
           </Link>
+          {/*  */}
           <Link style={{ textDecoration: "none" }} to="/education">
-            <MenuItem> Education </MenuItem>
+            <ItemAndIcon>
+              <MenuItem> Education </MenuItem>
+              <MenuItemIcon src={education} />
+            </ItemAndIcon>
           </Link>
+          {/*  */}
           <Link style={{ textDecoration: "none" }} to="/speech">
-            <MenuItem> Speech </MenuItem>
+            <ItemAndIcon>
+              <MenuItem> Speech </MenuItem>
+              <MenuItemIcon src={speech} />
+            </ItemAndIcon>
           </Link>
+          {/*  */}
           <Link style={{ textDecoration: "none" }} to="/time">
-            <MenuItem> Time </MenuItem>
+            <ItemAndIcon>
+              <MenuItem> Time </MenuItem>
+              <MenuItemIcon src={time} />
+            </ItemAndIcon>
           </Link>
         </MenuItems>
       )}
