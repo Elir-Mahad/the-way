@@ -287,11 +287,10 @@ export const QuotesRight = styled.div`
 
 export const TheQuote = styled.p`
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 1rem;
-  line-height: 2.5rem;
+  line-height: 1.7rem;
   text-align: left;
-  // background-color: red;
 `;
 
 export const CategoryIcons = styled.div`
