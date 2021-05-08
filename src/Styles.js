@@ -72,6 +72,10 @@ export const BasketAndCount = styled.div`
   display: flex;
   background-color: black;
   color: white;
+`;
+
+export const BasketIcon = styled.div`
+  display: flex;
   border: 1px solid white;
   border-radius: 3px;
   justify-content: center;
@@ -79,12 +83,11 @@ export const BasketAndCount = styled.div`
 `;
 
 export const ItemCount = styled.p`
-  font-size: 1.2rem;
-  // color: black;
+  font-size: 1rem;
   text-align: center;
-  // position: relative;
-  // top: 9px;
-  // right: 6px;
+  position: relative;
+  top: 20px;
+  left: 35px;
 `;
 
 // ------------------------------------- Page specific styles
@@ -124,15 +127,15 @@ export const LettersJp = styled.div`
 `;
 
 export const JpLetter = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-align: center;
   color: white;
-  width: 2.5rem;
+  width: 2rem;
   padding: 0.5rem;
 `;
 
 export const IntroText = styled.p`
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: center;
   width: 100%;
   color: white;
