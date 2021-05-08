@@ -153,7 +153,7 @@ export const SynopsisBackground = styled.div`
   background-image: linear-gradient(-100deg, #130f40 0%, #000000 64%);
 `;
 
-export const Picture = styled.img`
+export const SynopsisScreenImage = styled.img`
   width: 100%;
 `;
 
@@ -172,23 +172,29 @@ export const DescriptionText = styled.p`
 // User guide
 
 export const UserGuideBackground = styled.div`
-  background-image: url(${darkbackground});
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 `;
-// Important:The code in the background image
-// makes the image take up the full height of the screen.
+
+export const UserGuideScreenImage = styled.img`
+  height: 5rem;
+  display: block;
+  margin: auto;
+`;
 
 export const UserGuideContainer = styled.div`
-  padding: 2rem;
-  height: 40rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  height: 100%;
 `;
 
 export const UserGuideInstruction = styled.p`
   font-size: 1.1rem;
-  margin: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: black;
 `;
 
 //Liked Quotes
@@ -197,6 +203,7 @@ export const NoLikedQuotesContainer = styled.p`
   background-color: black;
   padding: 10;
 `;
+
 export const NoLikedQuotesText = styled.p`
   color: white;
   font-size: 20px;

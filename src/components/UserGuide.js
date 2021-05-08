@@ -3,11 +3,14 @@ import {
   UserGuideInstruction,
   UserGuideContainer,
   UserGuideBackground,
+  UserGuideScreenImage,
 } from "../Styles";
+import infoicon from "../assets/info.png";
 //
 function UserGuide() {
   return (
     <UserGuideBackground>
+      <UserGuideScreenImage src={infoicon} />
       <UserGuideContainer>
         <UserGuideInstruction>
           Find a quote that you like, press the heart icon of that quote.

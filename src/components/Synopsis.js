@@ -3,7 +3,7 @@ import {
   SynopsisContainer,
   DescriptionText,
   SynopsisBackground,
-  Picture,
+  SynopsisScreenImage,
 } from "../Styles";
 import mandem from "../assets/mandem.jpeg";
 import harakiri from "../assets/harakiri.jpg";
@@ -11,7 +11,7 @@ import harakiri from "../assets/harakiri.jpg";
 function Synopsis() {
   return (
     <SynopsisBackground>
-      <Picture src={mandem} />
+      <SynopsisScreenImage src={mandem} />
       <SynopsisContainer>
         <DescriptionText>
           Hagakure was Written, by Yamamoto Tsunetomo, during a time when there
@@ -22,7 +22,7 @@ function Synopsis() {
           absence of war.
         </DescriptionText>
       </SynopsisContainer>
-      <Picture src={harakiri} />
+      <SynopsisScreenImage src={harakiri} />
       <SynopsisContainer>
         <DescriptionText>
           It grapples with the meaning of death, by challenging the idea that
