@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import {
   CategoryIcons,
@@ -46,6 +46,11 @@ function QuoteContainer({ id, tag, title, quoteText }) {
       },
     });
   };
+
+  // const AddToBaskeAndChangeColor = () => {
+  //   addToBasket();
+  //   changeColor();
+  // };
 
   return (
     <QuoteBox>
