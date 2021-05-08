@@ -1,17 +1,18 @@
 import React from "react";
 import "../App.css";
 import {
-  CategoryIcons,
-  QuoteBox,
-  QuotesRight,
-  QuotesLeft,
-  Quotetitle,
-  Tag,
-  TextAndQuotes,
-  TextIcon,
-  TheQuote,
-  TopTextIcon,
-  BackgroundImageContainer,
+  LiCategoryIcons,
+  LiQuoteBox,
+  LiQuotesRight,
+  LiQuotesLeft,
+  LiQuotetitle,
+  LiTag,
+  LiTextAndQuotes,
+  LiTextIcon,
+  LiTheQuote,
+  LiTopTextIcon,
+  LiBackgroundImageContainer,
+  LiIconButton,
 } from "../Styles";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
@@ -41,38 +42,38 @@ function LikedQuotesContainer({ id, tag, title, quoteText }) {
   };
 
   return (
-    <QuoteBox>
-      <BackgroundImageContainer>
+    <LiQuoteBox>
+      <LiBackgroundImageContainer>
         {/* Top texts and icons below */}
-        <TopTextIcon>
-          <TextIcon>
+        <LiTopTextIcon>
+          <LiTextIcon>
             <SubjectIcon />
-            <Tag>{tag}</Tag>
-          </TextIcon>
-          <TextIcon>
-            <Quotetitle> {title}</Quotetitle>
+            <LiTag>{tag}</LiTag>
+          </LiTextIcon>
+          <LiTextIcon>
+            <LiQuotetitle> {title}</LiQuotetitle>
             <FormatListNumberedRtlIcon />
-          </TextIcon>
-        </TopTextIcon>
+          </LiTextIcon>
+        </LiTopTextIcon>
         {/* The actual quote is below */}
-        <TextAndQuotes>
-          <QuotesLeft>
+        <LiTextAndQuotes>
+          <LiQuotesLeft>
             <FaQuoteLeft />
-          </QuotesLeft>
-          <TheQuote>{quoteText}</TheQuote>
-          <QuotesRight>
+          </LiQuotesLeft>
+          <LiTheQuote>{quoteText}</LiTheQuote>
+          <LiQuotesRight>
             <FaQuoteRight />
-          </QuotesRight>
-        </TextAndQuotes>
+          </LiQuotesRight>
+        </LiTextAndQuotes>
         {/* Liked icon below */}
-        <CategoryIcons>
-          <button onClick={removeFromBasket} style={{ padding: 5 }}>
+        <LiCategoryIcons>
+          <LiIconButton onClick={removeFromBasket}>
             <DeleteIcon />
-          </button>
-        </CategoryIcons>
+          </LiIconButton>
+        </LiCategoryIcons>
         {/*  */}
-      </BackgroundImageContainer>
-    </QuoteBox>
+      </LiBackgroundImageContainer>
+    </LiQuoteBox>
   );
 }
 
