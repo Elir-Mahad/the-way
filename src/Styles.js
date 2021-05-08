@@ -56,10 +56,10 @@ export const MenuIconContainer = styled.button`
   display: flex;
   background-color: black;
   color: white;
-  border: 2px solid white;
+  border: 1px solid white;
+  border-radius: 3px;
   justify-content: center;
-  border-radius: 50%;
-  padding: 0.7rem;
+  padding: 0.4rem;
 `;
 
 // BasketHeart
@@ -72,22 +72,19 @@ export const BasketAndCount = styled.div`
   display: flex;
   background-color: black;
   color: white;
-  border: 2px solid white;
+  border: 1px solid white;
+  border-radius: 3px;
   justify-content: center;
-  border-radius: 50%;
-  padding-bottom: 0.7rem;
-  padding-top: 0.7rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding: 0.4rem;
 `;
 
 export const ItemCount = styled.p`
   font-size: 1.2rem;
   // color: black;
   text-align: center;
-  position: relative;
-  top: 12px;
-  right: 3px;
+  // position: relative;
+  // top: 9px;
+  // right: 6px;
 `;
 
 // ------------------------------------- Page specific styles
