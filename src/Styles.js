@@ -29,7 +29,7 @@ export const MenuItems = styled.div`
   height: 27rem;
   width: 12rem;
   position: absolute;
-  top: 66px;
+  top: 55px;
   left: 1px;
 `;
 
