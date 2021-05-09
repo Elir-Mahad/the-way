@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import {
   CategoryIcons,
@@ -33,6 +33,7 @@ function QuoteContainer({ id, tag, title, quoteText }) {
   // WHEN WILL NEED TO THE GRAB THE BASKET ITEMS
   // OR THE WHOLE BASKET SOMEWHERE IN THE COMPONENT
 
+  //!Below is the function to add the item to the basket when the heart icon is clicked
   const addToBasket = () => {
     // console.log();
     // add item to basket
@@ -47,10 +48,27 @@ function QuoteContainer({ id, tag, title, quoteText }) {
     });
   };
 
-  // const AddToBaskeAndChangeColor = () => {
-  //   addToBasket();
-  //   changeColor();
-  // };
+  //! Below is the function to change the heart icon's color when its clicked
+  //! The color change only remains while the user is still on that category
+  //! If the category is changed the color of the heart icon, changes back to black
+  const [iconColor, setIconColor] = useState("black");
+  // The constant iconColor stores the value 'black'
+  // The useState declares that this value will be manipulated
+
+  const changeColor = () => {
+    // The constant changeColor stores a function
+    setIconColor("darkred");
+    // that changes the value of iconColor to 'darkred'
+  };
+
+  //! Below is the function that combines the two previous functions
+  const addToBaskeAndChangeColor = () => {
+    // The constant addToBaskeAndChangeColor stores
+    addToBasket();
+    // the function that adds a quote to the basket
+    changeColor();
+    // the function that changes heart color on click
+  };
 
   return (
     <QuoteBox>
@@ -78,7 +96,12 @@ function QuoteContainer({ id, tag, title, quoteText }) {
         </TextAndQuotes>
         {/* Liked icon below */}
         <CategoryIcons>
-          <IconButton onClick={addToBasket}>
+          <IconButton
+            style={{ color: iconColor }}
+            // the icon's color will be value that's stored in iconColor
+            onClick={addToBaskeAndChangeColor}
+            // On click trigger this function
+          >
             <FavoriteIcon />
           </IconButton>
         </CategoryIcons>
