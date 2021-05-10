@@ -26,29 +26,9 @@ export const initialState = {
   // then, on the page, it should display the number 3 next to the basket.
 };
 
-export const getBasketTotal = (basket) =>
-  // create a constant called getBasketTotal;
-  // this constant has a parameter which is the actual shopping basket
-
-  basket?.reduce((amount, item) => item.price + amount, 0);
-// take the basket and return a reduce function
-// reduce is a function that has two paramaters
-// The first parameter is an amount:
-// (the price of the item)
-// The second parameter is item :
-// (the item-object that you reiterate through the basket)
-
-// add the price of the item to the original amount
-// the orignal amount starts at 0
-// increment all the prices of items in the basket
-
-// After all that is done the constant will get automaticaly exported
-// and it will be imported it into the subTotal.js
-// ( --> CurrencyFormat -->value )
-
 const reducer = (state, action) => {
   // The constant reducer stores a function
-  // that has the two parameter state and action.
+  // that has the two parameters state and action.
 
   // We refer to the data layer as state;
   // so anything inside the data layer is known as state.
