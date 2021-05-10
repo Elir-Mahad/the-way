@@ -1,7 +1,11 @@
 // This is where the data layer logic goes
 
+const basketFromLocalStorage = JSON.parse(
+  localStorage.getItem("basket") || "[]"
+);
+
 export const initialState = {
-  basket: [],
+  basket: basketFromLocalStorage,
   user: null,
   // the data layer in the beginning is a basket with an empty array --> basket :[] ;
 

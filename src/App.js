@@ -25,7 +25,6 @@ const basketFromLocalStorage = JSON.parse(
 );
 
 function App() {
-  // const [basket, setBasket] = useState([]);
   const [basket, setBasket] = useState(basketFromLocalStorage);
 
   useEffect(() => {
