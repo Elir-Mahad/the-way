@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WelcomeScreen from "./components/WelcomeScreen";
@@ -17,8 +17,23 @@ import { StateProvider } from "./StateProvider";
 import { initialState } from "./reducer";
 import reducer from "./reducer";
 import MenuAndBasket from "./components/MenuAndBasket";
+//
+//! --------------------------------------Imports above
+
+const basketFromLocalStorage = JSON.parse(
+  localStorage.getItem("basket") || "[]"
+);
 
 function App() {
+  // const [basket, setBasket] = useState([]);
+  const [basket, setBasket] = useState(basketFromLocalStorage);
+
+  useEffect(() => {
+    //
+    localStorage.setItem("basket", JSON.stringify(basket));
+    // Store the basket in the local storage
+  });
+
   return (
     <div className="App">
       <StateProvider initialState={initialState} reducer={reducer}>

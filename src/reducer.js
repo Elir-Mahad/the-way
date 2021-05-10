@@ -14,13 +14,13 @@ export const initialState = {
   // Comment out the above 'basket:[]'
 
   // Uncomment the below basket
-  // basket: ["bread", "meat"]
+  // basket: ["bread", "meat"],
 
   // This basket has two items, therefore if the context api is working
   // then, on the page, it should display the number 2 next to the basket.
 
   // Or uncomment the below basket
-  // basket: ["bread", "meat", "pizza"]
+  // basket: ["bread", "meat", "pizza"],
 
   // This basket has three items, therefore if the context api is working
   // then, on the page, it should display the number 3 next to the basket.
@@ -114,7 +114,7 @@ const reducer = (state, action) => {
 
     case "REMOVE_FROM_BASKET":
       // This second case "REMOVE_FROM_BASKET"
-      // represent the action of removing an item from the basket
+      // represents the action of removing an item from the basket
       // Below is the Logic for removing item from basket
 
       let newBasket = [...state.basket];

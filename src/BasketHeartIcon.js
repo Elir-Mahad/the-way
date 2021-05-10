@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 //
 import { Link } from "react-router-dom";
 //
@@ -17,8 +17,13 @@ import {
 const BasketHeartIcon = () => {
   const [{ basket }] = useStateValue();
   //
-  console.log(basket);
-  //
+  // console.log(basket);
+  useEffect(() => {
+    //
+    localStorage.setItem("basket", JSON.stringify(basket));
+    // Store the basket in the local storage
+  });
+  // //
   return (
     <BasketAndCountBox className="basket">
       <Link style={{ textDecoration: "none" }} to="/favourite">
