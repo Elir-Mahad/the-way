@@ -20,6 +20,8 @@ import MenuAndBasket from "./components/MenuAndBasket";
 //
 //! --------------------------------------Imports above
 
+// remove local repo from laptop
+
 const basketFromLocalStorage = JSON.parse(
   localStorage.getItem("basket") || "[]"
 );
