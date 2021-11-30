@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../../App.css";
 import {
   LiCategoryIcons,
   LiQuoteBox,
@@ -13,7 +13,7 @@ import {
   LiTopTextIcon,
   LiBackgroundImageContainer,
   LiIconButton,
-} from "../Styles";
+} from "../../Styles";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 //
@@ -21,7 +21,7 @@ import SubjectIcon from "@material-ui/icons/Subject";
 import FormatListNumberedRtlIcon from "@material-ui/icons/FormatListNumberedRtl";
 import DeleteIcon from "@material-ui/icons/Delete";
 //
-import { useStateValue } from "../StateProvider";
+import { useStateValue } from "../../rca/StateProvider";
 
 function LikedQuotesContainer({ id, tag, title, quoteText }) {
   //

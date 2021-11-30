@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 //
 import FavoriteIcon from "@material-ui/icons/Favorite";
 //
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../../rca/StateProvider";
 import {
   BasketAndCount,
   BasketAndCountBox,
   BasketIcon,
   ItemCount,
-} from "./Styles";
+} from "../../Styles";
 
 //!------------------------------------IMPORTS
 

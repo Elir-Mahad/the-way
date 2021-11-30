@@ -1,8 +1,8 @@
 import React from "react";
 //
-import { useStateValue } from "../../StateProvider";
+import { useStateValue } from "../../rca/StateProvider";
 //
-import LikedQuotesContainer from "../LikedQuotesContainer";
+import LikedQuotesContainer from "../containers/LikedQuotesContainer";
 import {
   CategoryScreen,
   LikedQuotesTitle,

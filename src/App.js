@@ -1,22 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import WelcomeScreen from "./components/WelcomeScreen";
-import Synopsis from "./components/Synopsis";
-import UserGuide from "./components/UserGuide";
 //
-import Conduct from "./components/screens/Conduct";
-import Courage from "./components/screens/Courage";
-import Death from "./components/screens/Death";
-import Education from "./components/screens/Education";
-import Speech from "./components/screens/Speech";
-import Time from "./components/screens/Time";
-import LikedQuotes from "./components/screens/LikedQuotes";
+import MenuAndBasket from "./components/general-parts/MenuAndBasket";
+import WelcomeScreen from "./components/screens/WelcomeScreen";
+import Synopsis from "./components/screens/SynopsisScreen";
+import UserGuide from "./components/screens/UserGuideScreen";
+import Time from "./components/screens/TimeScreen";
+import LikedQuotes from "./components/screens/LikedQuotesScreen";
 //
-import { StateProvider } from "./StateProvider";
-import { initialState } from "./reducer";
-import reducer from "./reducer";
-import MenuAndBasket from "./components/MenuAndBasket";
+import { StateProvider } from "./rca/StateProvider";
+import { initialState } from "./rca/reducer";
+import reducer from "./rca/reducer";
 //
 //! --------------------------------------Imports above
 
@@ -47,26 +42,6 @@ function App() {
             <Route path="/time">
               <MenuAndBasket />
               <Time />
-            </Route>
-            <Route path="/speech">
-              <MenuAndBasket />
-              <Speech />
-            </Route>
-            <Route path="/education">
-              <MenuAndBasket />
-              <Education />
-            </Route>
-            <Route path="/death">
-              <MenuAndBasket />
-              <Death />
-            </Route>
-            <Route path="/courage">
-              <MenuAndBasket />
-              <Courage />
-            </Route>
-            <Route path="/conduct">
-              <MenuAndBasket />
-              <Conduct />
             </Route>
             {/*  */}
             <Route path="/userguide">

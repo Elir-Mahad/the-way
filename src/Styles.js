@@ -1,6 +1,6 @@
 import styled from "styled-components";
 // Background images
-import samuraiguard from "./assets/samurai_infront_of_temple.jpg";
+import samuraiguard from "./assets/welcome-screen-background.jpeg";
 import darkbackground from "./assets/dark_texture_background.jpg";
 import blackbackground from "./assets/black.png";
 
@@ -165,8 +165,22 @@ export const SynopsisContainer = styled.div`
 `;
 
 export const DescriptionText = styled.p`
-  text-align: left;
+  text-align: center;
   margin: 1rem;
+  // background-color:red;
+`;
+
+export const SynopsisButton = styled.button`
+  background-color:white;
+  color:black;
+  width:9rem;
+  height:2.5rem;
+  border:none;
+  border-radius:5px;
+  display:block;
+  margin:auto;
+  margin-top:3rem;
+  cursor:pointer;
 `;
 
 // User guide
@@ -195,6 +209,18 @@ export const UserGuideInstruction = styled.p`
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   color: black;
+`;
+
+export const UserGuideNext = styled.button`
+  background-color:black;
+  color:white;
+  width:9rem;
+  height:2.5rem;
+  border:none;
+  border-radius:5px;
+  display:block;
+  margin:auto;
+  cursor:pointer;
 `;
 
 //Liked Quotes - no liked quotes
